@@ -1,5 +1,4 @@
 # ViralYuk-
-# NusaSosmed
 
 * **Kelas:** WebDev A[cite: 15]
 * **Kelompok:** Kelompok 1[cite: 15]
