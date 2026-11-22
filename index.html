@@ -1,13 +1,146 @@
-<!-- BAGIAN 1: HEADER (TANGGUNG JAWAB CEO) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralYUK! — Agensi Manajemen Media Sosial untuk UMKM</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Pemanggilan CSS Wajib -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BAGIAN 1: HEADER (PERAN CEO) -->
     <header id="header-section" data-role="CEO">
-        <div class="brand-logo">
-            <a href="#hero-section">ViralYuk</a>
+        <div class="container">
+            <a href="#hero-section" class="brand">ViralYUK!</a>
+            <nav aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li><a href="#hero-section">Beranda</a></li>
+                    <li><a href="#catalog-section">Katalog</a></li>
+                    <li><a href="#calc-section">Kalkulator</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#hero-section">Beranda</a></li>
-                <li><a href="#catalog-section">Katalog</a></li>
-                <li><a href="#calc-section">Kalkulator</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <main>
+        <!-- BAGIAN 2: HERO SECTION (PERAN PRODUCT MANAGER) -->
+        <section id="hero-section" data-role="PM">
+            <div class="container hero-content">
+                <h1>Bikin Bisnis UMKM Anda Viral dan Laris di Media Sosial</h1>
+                <p class="hero-subtitle">
+                    ViralYUK! mengelola konten, jadwal unggah, dan laporan performa akun Anda, supaya Anda fokus berjualan.
+                </p>
+                <ul class="hero-benefits">
+                    <li>Konten kreatif yang sesuai karakter brand UMKM</li>
+                    <li>Harga transparan, tanpa biaya tersembunyi</li>
+                    <li>Laporan performa bulanan yang mudah dipahami</li>
+                </ul>
+                <a href="#calc-section" class="btn btn-primary">Hitung Biaya Langganan</a>
+            </div>
+        </section>
+
+        <!-- BAGIAN 3: CATALOG SECTION (PERAN PRODUCT MANAGER) -->
+        <section id="catalog-section" data-role="PM">
+            <div class="container">
+                <h2 class="section-title">Katalog Paket Layanan</h2>
+                <div class="catalog-grid">
+                    <!-- Paket 1 -->
+                    <article class="card">
+                        <h3>Paket Perintis</h3>
+                        <p class="card-price">Rp500.000 <span>/ bulan</span></p>
+                        <ul class="card-features">
+                            <li>1 platform media sosial</li>
+                            <li>12 konten per bulan</li>
+                            <li>Desain feed dasar</li>
+                            <li>Laporan bulanan singkat</li>
+                        </ul>
+                    </article>
+
+                    <!-- Paket 2 (Unggulan) -->
+                    <article class="card card-featured">
+                        <span class="card-badge">Paling Populer</span>
+                        <h3>Paket Pertumbuhan</h3>
+                        <p class="card-price">Rp1.200.000 <span>/ bulan</span></p>
+                        <ul class="card-features">
+                            <li>2 platform media sosial</li>
+                            <li>24 konten per bulan</li>
+                            <li>Caption + hashtag riset</li>
+                            <li>1x konten video pendek per minggu</li>
+                            <li>Laporan performa</li>
+                        </ul>
+                    </article>
+
+                    <!-- Paket 3 -->
+                    <article class="card">
+                        <h3>Paket Korporasi Viral</h3>
+                        <p class="card-price">Rp2.500.000 <span>/ bulan</span></p>
+                        <ul class="card-features">
+                            <li>3 platform media sosial</li>
+                            <li>40 konten per bulan</li>
+                            <li>Video pendek tiap minggu</li>
+                            <li>Kelola iklan berbayar dasar</li>
+                            <li>Konsultasi strategi bulanan</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <p class="promo-info">
+                    Promo Spesial: Masukkan kode promo <strong>VIRALYUK</strong> atau pilih durasi minimal <strong>3 bulan</strong> pada kalkulator di bawah untuk mendapatkan <strong>diskon 10%</strong>!
+                </p>
+            </div>
+        </section>
+
+        <!-- BAGIAN 4: CALCULATOR SECTION (PERAN SOFTWARE ENGINEER) -->
+        <section id="calc-section" data-role="SE">
+            <div class="container">
+                <h2 class="section-title">Kalkulator Simulasi Biaya Langganan</h2>
+                <div class="calc-box">
+                    <div class="form-group">
+                        <label for="pilih-paket">Pilih Paket Layanan</label>
+                        <select id="pilih-paket">
+                            <option value="500000">Paket Perintis — Rp500.000 / bulan</option>
+                            <option value="1200000">Paket Pertumbuhan — Rp1.200.000 / bulan</option>
+                            <option value="2500000">Paket Korporasi Viral — Rp2.500.000 / bulan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jumlah-bulan">Jumlah Bulan Berlangganan</label>
+                        <input type="number" id="jumlah-bulan" min="1" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kode-promo">Kode Promo (Opsional)</label>
+                        <input type="text" id="kode-promo" placeholder="Ketik kode promo, contoh: VIRALYUK">
+                    </div>
+
+                    <button type="button" id="tombol-hitung" class="btn btn-primary">Hitung Total Biaya</button>
+
+                    <div id="hasil-perhitungan" class="calc-result" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- BAGIAN 5: FOOTER (PERAN CEO) -->
+    <footer id="footer-section" data-role="CEO">
+        <div class="container footer-content">
+            <p><strong>ViralYUK!</strong> — Bikin UMKM-mu Tampil Segar, Konsisten, dan Laris di Media Sosial.</p>
+            <p>&copy; 2026 ViralYUK! | Kelas WebDev A · Kelompok 1 · Agensi Manajemen Media Sosial untuk UMKM</p>
+            <p>
+                Tim Pengembang: Mohammad Shafi Farras (CEO), Mahar Suwignyo Balakoswa (PM),
+                Ahmad Hilmi Ali (SE), Raeya Kaka Bramasta (SE),
+                Muhammad Akbar Adzanza Aji (UI/UX), Muhammad Deshan Abrar (UI/UX)
+            </p>
+        </div>
+    </footer>
+
+    <!-- Pemanggilan JavaScript Wajib -->
+    <script src="script.js"></script>
+</body>
+</html>
