@@ -4,7 +4,7 @@
 * **Kelas:** WebDev A[cite: 15]
 * **Kelompok:** Kelompok 1[cite: 15]
 * **Tema Studi Kasus:** Agensi Manajemen Media Sosial untuk UMKM[cite: 15, 18]
-* **Tautan Aktif Website (GitHub Pages):** https://username-github-anda.github.io/agensi-sosmed-klp1/
+* **Tautan Aktif Website (GitHub Pages):** (https://shafifarras-unj.github.io/ViralYuk-/#hero-section)
 
 ## Daftar Anggota Kelompok & Pembagian Peran
 
